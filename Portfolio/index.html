@@ -30,7 +30,7 @@
         <a class="navbar-brand" href="#">
             <img src="A.svg" width="70" height="auto" alt="" style="padding-left: 20px; ">
         </a>
-        <button>Contact</button>
+        <button button type="button" class="btn btn-primary contact" data-toggle="modal" data-target="#contact">Contact</button>
     </nav>
 
     <div class="container">
@@ -103,16 +103,51 @@
                         ...
                     </div>
                     <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
-                        <h3>Socials</h3>
-                        <a href="https://www.facebook.com/Adi.Venzuela4" class="fa fa-facebook disable"></a><p>Adi Venzuela</p>
-                        <a href="https://www.instagram.com/adi.cv_/" class="fa fa-instagram"></a><p>Adi Venzuela</p>
-                        <a href="https://www.linkedin.com/in/adrian-venzuela-848845371/" class="fa fa-linkedin"></a><p>Adrian Venzuela</p>
-                        <a href="https://github.com/AdiVenz" class="fa fa-github"></a><p>Adrian C. Venzuela</p>
+                        <h3 class="socials-title">Socials</h3>
+
+<div class="social-link">
+  <a href="https://www.facebook.com/Adi.Venzuela4" target="_blank" class="fa fa-facebook"></a>
+  <span>Adi Venzuela</span>
+</div>
+
+<div class="social-link">
+  <a href="https://www.instagram.com/adi.cv_/" target="_blank" class="fa fa-instagram"></a>
+  <span>Adi Venzuela</span>
+</div>
+
+<div class="social-link">
+  <a href="https://www.linkedin.com/in/adrian-venzuela-848845371/" target="_blank" class="fa fa-linkedin"></a>
+  <span>Adrian Venzuela</span>
+</div>
+
+<div class="social-link">
+  <a href="https://github.com/AdiVenz" target="_blank" class="fa fa-github"></a>
+  <span>Adrian C. Venzuela</span>
+</div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+    <!-- Modal -->
+<div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="contactLabel">Contact Me</h5>
+        <button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="contact-info">📧 <a href="mailto:adivenzuela4@gmail.com">adivenzuela4@gmail.com</a></p>
+        <p class="contact-info">📱 0906-324-9645</p>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </html>
