@@ -228,3 +228,52 @@ padding-top: 5px;
 .social-link:hover span {
   color: #00bcd4;
 }
+
+/* --- Projects Section --- */
+.project-link {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+
+.project-link a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.project-link a:hover {
+  text-decoration: underline;
+  color: #00ffff;
+}
+
+/* --- Certifications Section --- */
+.cert-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #e0e0e0;
+  margin-top: 20px;
+}
+
+.cert-entry img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 188, 212, 0.2);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cert-entry img:hover {
+  transform: scale(1.03);
+}
+
+.cert-entry p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #00bcd4;
+}
