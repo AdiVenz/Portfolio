@@ -29,6 +29,7 @@
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img src="A.svg" width="70" height="auto" alt="" style="padding-left: 20px; ">
+
         </a>
         <button button type="button" class="btn btn-primary contact" data-toggle="modal"
             data-target="#contact">Contact</button>
@@ -36,7 +37,7 @@
 
     <div class="container">
         <div class="row bord ">
-            <div class="intro text-center">
+            <div class="intro text-center text-center fade-slide-up">
                 <h1 class="name">Hi! I am Adrian C. Venzuela</h1>
                 <h2 class="title">Computer Engineer</h2>
             </div>
@@ -80,6 +81,17 @@
                             Currently, I'm focused on expanding my skills in web development, software engineering, and
                             cybersecurity.
                         </p>
+                        <div class="divider"></div>
+
+                        <h5>Skills</h5>
+                        <div class="skills-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">HTML/CSS</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">C++</span>
+                            <span class="badge">Networking</span>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <h3>Education</h3>
@@ -102,7 +114,7 @@
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="project-link">
                             <a href="https://adivenz.github.io/Cevrich-Art-Gallery/" target="_blank">
-                                🎨 Cevrich Octaviano's Art Gallery
+                                 Cevrich Octaviano's Art Gallery
                             </a>
                         </div>
                     </div>
@@ -110,9 +122,9 @@
                     <!-- Certifications Tab -->
                     <div class="tab-pane fade" id="nav-cert" role="tabpanel" aria-labelledby="nav-cert-tab">
                         <div class="cert-entry">
-                            <img src="introduction-to-cybersecurity.png"
-                                alt="Introduction to Cybersecurity Certificate" style="width: 150px;">
-                            <p>📜 Introduction to Cybersecurity</p>
+                            <img src="introduction-to-cybersecurity.png" alt="Introduction to Cybersecurity Certificate"
+                                style="width: 150px;">
+                            <p>Introduction to Cybersecurity</p>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
@@ -164,5 +176,14 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".fade-slide-up").forEach((el, index) => {
+                setTimeout(() => el.classList.add("show"), index * 100);
+            });
+        });
+    </script>
+
+</body>
 
 </html>
